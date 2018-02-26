@@ -1,0 +1,141 @@
+
+
+@font-face {
+	font-family:circular;
+	src:url(../fonts/CircularStd-Bold.otf);	
+}
+
+@font-face {
+	font-family:masque;
+	src:url(../fonts/MASQUE__.ttf);
+}
+
+.gallery {
+	position:relative;
+	min-height:400px;
+	width:100%;
+	float:left;	
+	top:1140px;
+	background-color:#f6f6f6;
+	padding:0px 0px 50px 0px;
+}
+
+.gallery h1 {
+	position:relative;
+	width:100%;
+	text-align:center;
+	font-family:masque;	
+	text-shadow:0px 2px 5px black;
+	color:red;
+	padding:30px;
+}
+
+.row {
+	width:90%;
+	position:relative;
+	margin:auto;
+	display:block;
+	padding:20px;
+	box-shadow:0px 0px 5px black;
+	background-color:#f2f2f2;
+}
+
+.clear4 {
+	clear:both;	
+}
+
+.img-container {
+	width:25%;
+	float:left;	
+	position:relative;
+	overflow:hidden;
+}
+
+.img-container img {
+	cursor:pointer;
+	display:block;
+	width:100%;	
+	position:relative;
+	-ms-transform:rotate(0deg) scale(1,1);
+	-webkit-transform:rotate(0deg) scale(1,1);
+	transform: rotate(0deg) scale(1,1);
+	-webkit-transition:-webkit-transform .5s;
+	transition:transform .5s;
+}
+
+.img-container:hover img {
+	-ms-transform:rotate(45deg) scale(2,2);
+	-webkit-transform:rotate(45deg) scale(2,2);
+	transform: rotate(45deg) scale(2,2);	
+}
+
+.row p {
+	position:absolute;
+	bottom:0px;
+	left:0px;
+	width:100%;
+	text-align:center;
+	height:0%;
+	background-color:rgba(0,0,0,0.5);
+	-webkit-transition:height 0.5s;
+	transition:height 0.5s;
+	color:orange;
+	font-family:circular;
+}
+
+.img-container:hover p {
+	height:100%
+}
+
+@media only screen and (max-width: 860px) {
+	.img-container {
+		width:33.33%;
+	}
+	
+	.clear4 {
+		clear:none;	
+	}
+	
+	.clear3 {
+		clear:both;	
+	}
+}
+
+@media only screen and (max-width: 646px) {
+	.img-container {
+		width:50%;	
+	}
+	
+	.clear4 {
+		clear:none;	
+	}
+	
+	.clear3 {
+		clear:none;	
+	}
+	.clear2 {
+		clear:both;	
+	}
+}
+
+@media only screen and (max-width: 455px) {
+	.img-container {
+		width:100%;	
+	}
+	
+	.clear1 {
+		clear:both;	
+	}
+	
+	.clear2 {
+		clear:none;	
+	}
+	
+	.clear3 {
+		clear:none;	
+	}
+	
+	.clear4 {
+		clear:none;	
+	}
+}
